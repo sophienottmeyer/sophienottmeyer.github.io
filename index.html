@@ -1,30 +1,21 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+    <!-- ===== Meta Tags ===== -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link rel="preload" as="style"
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;family=Roboto+Mono&amp;family=Roboto:wght@400;700&amp;display=swap">
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;family=Roboto+Mono&amp;family=Roboto:wght@400;700&amp;display=swap"
-          media="all" onload="this.media=&quot;all&quot;">
-    <link rel="stylesheet" href="/css/vendor-bundle.css" media="all" onload="this.media=&quot;all&quot;">
-    <link rel="stylesheet" href="/css/wowchemy.css">
-    <link rel="stylesheet" href="/css/github-light.css" title="hl-light" media="all" onload="this.media=&quot;all&quot;">
-    <link href="/css/fontawesome/fontawesome.css" rel="stylesheet"/>
-    <link href="/css/fontawesome/brands.css" rel="stylesheet"/>
-    <link href="/css/fontawesome/regular.css" rel="stylesheet"/>
-    <link href="/css/fontawesome/solid.css" rel="stylesheet"/>
-    <meta name="google-site-verification" content="1TQY8M2Sq4bWyf-XpFnehN7zBzhi5V_ONxxw6cwglcA" />
     <meta name="author" content="Sophie Nottmeyer">
     <meta name="description" content="PhD Candidate in Economics at CEMFI">
+    <meta name="theme-color" content="#1ABC9C">
+    <title>Sophie Nottmeyer</title>
+
+    <!-- ===== SEO & Social ===== -->
+    <meta name="google-site-verification" content="1TQY8M2Sq4bWyf-XpFnehN7zBzhi5V_ONxxw6cwglcA" />
     <link rel="alternate" hreflang="en-us" href="https://sophienottmeyer.github.io/">
     <link rel="canonical" href="https://sophienottmeyer.github.io/">
     <link rel="icon" type="image/png" href="/assets/favicon.png">
     <link rel="apple-touch-icon" type="image/png" href="/assets/favicon.png">
-    <meta name="theme-color" content="#1ABC9C">
     <meta property="twitter:card" content="summary">
     <meta property="twitter:site" content="@snottmeyer">
     <meta property="twitter:creator" content="@snottmeyer">
@@ -36,323 +27,295 @@
     <meta property="og:image" content="https://sophienottmeyer.github.io/assets/avatar.jpg">
     <meta property="og:locale" content="en-us">
     <meta property="og:updated_time" content="2022-10-24T00:00:00+00:00">
-    <script type="application/ld+json">{
+    <script type="application/ld+json">
+    {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "url": "https://sophienottmeyer.github.io/"
-    }</script>
-    <title>Sophie Nottmeyer</title>
+    }
+    </script>
+
+    <!-- ===== Fonts & Styles ===== -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap"
+          media="all" onload="this.media='all'">
+    <link rel="stylesheet" href="/css/vendor-bundle.css" media="all" onload="this.media='all'">
+    <link rel="stylesheet" href="/css/wowchemy.css">
+    <link rel="stylesheet" href="/css/github-light.css" title="hl-light" media="all" onload="this.media='all'">
+    <link href="/css/fontawesome/fontawesome.css" rel="stylesheet"/>
+    <link href="/css/fontawesome/brands.css" rel="stylesheet"/>
+    <link href="/css/fontawesome/regular.css" rel="stylesheet"/>
+    <link href="/css/fontawesome/solid.css" rel="stylesheet"/>
+
+    <!-- ===== Custom Styles ===== -->
     <style type="text/css">
-    .section-heading h1 {
-        font-size: 1.4rem;
-        font-weight: 500;
-        margin-bottom: 0.5em;
-    }
+        /* --- Section Headings --- */
+        .section-heading h1 { font-size: 1.4rem; font-weight: 500; margin-bottom: 0.5em; }
+        .section-subheading a { color: inherit; text-decoration: underline; }
+        .section-subheading a:hover { color: #1ABC9C; text-decoration: underline; }
 
-    .section-subheading a {
-        color: inherit;
-        text-decoration: underline;
-    }
+        /* --- Abstract Button --- */
+        .toggle-abstract-btn {
+            background: #fff; color: #000; border: 1px solid #000;
+            border-radius: 0.5em; padding: 0.3em 0.6em; font-size: 0.8em; font-weight: 500;
+            cursor: pointer; box-shadow: 0 1px 4px rgba(22,152,157,0.07);
+            transition: background 0.2s, border 0.2s, color 0.2s; outline: none; margin-top: 0.4em;
+        }
+        .toggle-abstract-btn:hover, .toggle-abstract-btn:focus { border-color: #1ABC9C; color: #1ABC9C; }
 
-    .section-subheading a:hover {
-        color: #1ABC9C;
-        text-decoration: underline;
-    }
-
-    .toggle-abstract-btn {
-        background: #ffffff;
-        color: #000000;
-        border: 1px solid #000000;
-        border-radius: 0.5em;
-        padding: 0.2em 0.6em;
-        font-size: 0.8em;
-        font-weight: 500;
-        cursor: pointer;
-        box-shadow: 0 1px 4px rgba(22, 152, 157, 0.07);
-        transition: background 0.2s, border 0.2s, color 0.2s;
-        outline: none;
-    }
-
-    .toggle-abstract-btn:hover, .toggle-abstract-btn:focus {
-        border-color: #1ABC9C;
-        color: #1ABC9C;
-    }
-
-    .content-centered {
-        max-width: 1100px; /* or your preferred width */
-        margin: 0 auto; /* centers the box horizontally */
-        padding: 30px 0.25rem; /* adds space on left and right */
-    }
-
-    #research h2 {
-        margin-top: 2em;
-        margin-bottom: 1em;
-    }
-
-    .paper-title {
-        font-weight: bold;
-    }
-
-    .paper-entry {
-        margin-top: 2em; /* space above each paper entry */
-        margin-bottom: 2em; /* space below each paper entry */
-    }
-
-    .paper-info {
-        font-size: 0.9em; /* slightly smaller than the title */
-    }
-
-    .abstract-text {
-        font-size: 0.8em;
-        text-align: justify;
-    }
-
+        /* --- Layout --- */
+        .content-centered { max-width: 1100px; margin: 0 auto; padding: 30px 0.25rem; }
+        #research h2 { margin-top: 2em; margin-bottom: 1em; }
+        .paper-title { font-weight: bold; }
+        .paper-entry { margin-top: 2em; margin-bottom: 2em; line-height: 1.3; }
+        .paper-info { font-size: 0.9em; }
+        .abstract-text { font-size: 0.8em; text-align: justify; }
+        .article-style { font-size: 0.95em; }
     </style>
 </head>
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper"
-      data-wc-page-id="3976528693a0108357f4928017600865">
-<aside class="search-modal" id="search">
-    <div class="container">
-        <section class="search-header">
-            <div class="row no-gutters justify-content-between mb-3">
-                <div class="col-6"><h1>Search</h1></div>
-                <div class="col-6 col-search-close"><a class="js-search" href="#" aria-label="Close"><i
-                        class="fas fa-times-circle text-muted" aria-hidden="true"></i></a></div>
-            </div>
-            <div id="search-box"><input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-                                        autocomplete="off" autocorrect="off" spellcheck="false" type="search"
-                                        class="form-control" aria-label="Search..."></div>
-        </section>
-        <section class="section-search-results">
-            <div id="search-hits"></div>
-        </section>
-    </div>
-</aside>
-<div class="page-header header--fixed">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-            <div class="container-xl">
-                <div class="d-none d-lg-inline-flex"><a class="navbar-brand" href="/">Sophie Nottmeyer</a></div>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content"
-                        aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-                    <span><i class="fas fa-bars"></i></span></button>
-                <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-                    <a class="navbar-brand" href="/">
-                        Sophie Nottmeyer
-                    </a>
-                </div>
-                <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
-                    <ul class="navbar-nav d-md-inline-flex">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="/#about" data-target="#about">
-                                <span>Home</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/#research" data-target="#research">
-                                <span>Research</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-</div>
-<div class="page-body"><span class="js-widget-page d-none"></span>
-    <section id="about" class="home-section wg-v1/about">
-        <div class="home-section-bg"></div>
+<body id="top" class="page-wrapper" data-spy="scroll" data-offset="70" data-target="#navbar-main" data-wc-page-id="3976528693a0108357f4928017600865">
+
+    <!-- ===== Search Modal ===== -->
+    <aside class="search-modal" id="search">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-4">
-                    <div id="profile"><img class="avatar avatar-circle" width="270" height="270"
-                                           src="/assets/avatar.jpg"
-                                           alt="Sophie Nottmeyer">
-                        <div class="portrait-title"><h2>Sophie Nottmeyer</h2>
-                            <h3>PhD Candidate</h3>
-                            <h3><a href="https://www.cemfi.es/" target="_blank" rel="noopener"><span>CEMFI</span></a>
-                            </h3></div>
-                        <ul class="network-icon" aria-hidden="true">
-                            <li><a href="mailto:sophie.nottmeyer@cemfi.edu.es" aria-label="envelope"><i
-                                    class="fas fa-envelope big-icon"></i></a></li>
-                            <li><a href="https://x.com/snottmeyer" target="_blank" rel="noopener"
-                                   aria-label="twitter"><i class="fab fa-x-twitter big-icon"></i></a></li>
-                            <!--
-                            <li><a href="https://scholar.google.com/citations?user=8qQXMloAAAAJ&amp;hl=en"
-                                   target="_blank" rel="noopener" aria-label="graduation-cap"><i
-                                    class="fas fa-graduation-cap big-icon"></i></a></li>
-                            <li><a href="https://github.com/sophistecon" target="_blank" rel="noopener"
-                                   aria-label="github"><i class="fab fa-github big-icon"></i></a></li>
-                            -->
+            <section class="search-header">
+                <div class="row no-gutters justify-content-between mb-3">
+                    <div class="col-6"><h1>Search</h1></div>
+                    <div class="col-6 col-search-close">
+                        <a class="js-search" href="#" aria-label="Close">
+                            <i class="fas fa-times-circle text-muted" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div id="search-box">
+                    <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+                           autocomplete="off" autocorrect="off" spellcheck="false" type="search"
+                           class="form-control" aria-label="Search...">
+                </div>
+            </section>
+            <section class="section-search-results">
+                <div id="search-hits"></div>
+            </section>
+        </div>
+    </aside>
+
+    <!-- ===== Header & Navigation ===== -->
+    <div class="page-header header--fixed">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+                <div class="container-xl">
+                    <div class="d-none d-lg-inline-flex">
+                        <a class="navbar-brand" href="/">Sophie Nottmeyer</a>
+                    </div>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content"
+                            aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+                        <a class="navbar-brand" href="/">Sophie Nottmeyer</a>
+                    </div>
+                    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+                        <ul class="navbar-nav d-md-inline-flex">
+                            <li class="nav-item"></li>
+                                <a class="nav-link active" href="/#about" data-target="#about"><span>Home</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/#research" data-target="#research"><span>Research</span></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 col-lg-8">
-                    <div class="article-style"><h1 id="welcome">Welcome!</h1>
-                        <p>I am a PhD Candidate in Economics at <a href="https://www.cemfi.es" target="_blank"
-                                                                   rel="noopener">CEMFI</a>.</p>
-                        <p>My main field of research is development economics. My current work mainly focuses on
-                            technology adoption and contractual frictions in Sub-Saharan Africa. My projects are
-                            supported through funding by <a href="https://steg.cepr.org/" target="_blank"
-                                                            rel="noopener">STEG</a>, <a href="https://pedl.cepr.org/"
-                                                                                        target="_blank" rel="noopener">PEDL</a>
-                            and <a href="https://bfi.uchicago.edu/the-weiss-fund/" target="_blank" rel="noopener">The
-                                Weiss Fund</a>.</p>
-                        <p><b> I will be on the 2025/26 job market.</b></p>
-                        <p>
-                            <i class="fas fa-download pr-1 fa-fw"></i>
-                            My CV is available <a href="/files/resume.pdf" target="_blank">here</a>.
-                        </p>
+            </nav>
+        </header>
+    </div>
+
+    <!-- ===== Main Content ===== -->
+    <div class="page-body">
+        <span class="js-widget-page d-none"></span>
+
+        <!-- === About Section === -->
+        <section id="about" class="home-section wg-v1/about">
+            <div class="home-section-bg"></div>
+            <div class="container">
+                <div class="row">
+                    <!-- Profile Column -->
+                    <div class="col-12 col-lg-4">
+                        <div id="profile">
+                            <img class="avatar avatar-circle" width="270" height="270"
+                                 src="/assets/avatar.jpg" alt="Sophie Nottmeyer">
+                            <div class="portrait-title">
+                                <h2>Sophie Nottmeyer</h2>
+                                <h3>PhD Candidate</h3>
+                                <h3>
+                                    <a href="https://www.cemfi.es/" target="_blank" rel="noopener">
+                                        <span>CEMFI</span>
+                                    </a>
+                                </h3>
+                            </div>
+                            <ul class="network-icon" aria-hidden="true">
+                                <li>
+                                    <a href="mailto:sophie.nottmeyer@cemfi.edu.es" aria-label="envelope">
+                                        <i class="fas fa-envelope big-icon"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://x.com/snottmeyer" target="_blank" rel="noopener" aria-label="twitter">
+                                        <i class="fab fa-x-twitter big-icon"></i>
+                                    </a>
+                                </li>
+                                <!--
+                                <li><a href="https://scholar.google.com/citations?user=8qQXMloAAAAJ&hl=en"
+                                       target="_blank" rel="noopener" aria-label="graduation-cap">
+                                    <i class="fas fa-graduation-cap big-icon"></i></a></li>
+                                <li><a href="https://github.com/sophistecon" target="_blank" rel="noopener"
+                                       aria-label="github"><i class="fab fa-github big-icon"></i></a></li>
+                                -->
+                            </ul>
+                        </div>
                     </div>
-                    <div class="row"></div>
+                    <!-- Bio Column -->
+                    <div class="col-12 col-lg-8">
+                        <div class="article-style">
+                            <h1 id="welcome">Welcome!</h1>
+                            <p>I am a PhD Candidate in Economics at <a href="https://www.cemfi.es" target="_blank" rel="noopener">CEMFI</a>.</p>
+                            <p>My main field of research is development economics. I study how market imperfections affect firms and productivity across locations in low- and middle-income countries, with a particular focus on technology adoption. To answer these questions, I often draw on tools from spatial economics and non-traditional data sources.</p>
+                            <p>My projects are supported through funding by <a href="https://steg.cepr.org/" target="_blank" rel="noopener">STEG</a>, <a href="https://pedl.cepr.org/" target="_blank" rel="noopener">PEDL</a> and <a href="https://bfi.uchicago.edu/the-weiss-fund/" target="_blank" rel="noopener">The Weiss Fund</a>.</p>
+                            <p><b>I am on the 2025/26 job market.</b></p>
+                            <p>
+                                <i class="fas fa-download pr-1 fa-fw"></i>
+                                My CV is available <a href="/files/nottmeyer_CV.pdf" target="_blank">here</a>.
+                            </p>
+                        </div>
+                        <div class="row"></div>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <!-- === Research Section === -->
+        <div id="research">
+            <!-- --- Job Market Paper --- -->
+            <section id="working-papers" class="home-section wg-v1/about" style="padding: 0;">
+                <div class="content-centered">
+                    <h2>Job Market Paper</h2>
+                    <div class="paper-entry">
+                        <span class="paper-title">
+                            Trac(k)tors of Change: Monitoring, Tractor Mobility and Agricultural Mechanization in Kenya
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- --- Work in Progress --- -->
+            <section id="work-in-progress" class="home-section wg-v1/about" style="padding: 0;">
+                <div class="content-centered">
+                    <h2>Work in Progress</h2>
+                    <div class="paper-entry">
+                        <span class="paper-title">Informality and the City Size Wage Premium: Evidence from Brazil</span> <br>
+                        <button type="button" class="toggle-abstract-btn">Abstract</button>
+                        <div class="abstract-text" style="display:none; margin-top: 0.5em;">
+                            This paper analyzes how pervasive informality shapes the distribution of productivity gains typically associated with larger cities in Brazil. Using Census data, it shows that informality attenuates the urban wage premium by generating differential returns to density across worker types. Decomposing employment density into formal and informal components, the analysis reveals that formal workers experience strong wage gains from formal density, which are partially offset by a negative effect from informal density, while informal workers only benefit from formal density. These findings suggest that productive advantages of cities are primarily driven by the presence of formal workers, and that informality alters the composition of productivity spillovers in urban labor markets of emerging economies.
+                        </div>
+                    </div>
+                    <div class="paper-entry">
+                        <span class="paper-title">Milky Way: Market Structure and Behavior of Informal Traders in the Kenyan Dairy Sector</span>
+                        <br>
+                        <span class="paper-info">with Guanghong Xu and Martin Nandelenga</span>
+                    </div>
+                    <div class="paper-entry">
+                        <span class="paper-title">Ethnic Diversity and Technology Choice in Manufacturing</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- --- Other Publications --- -->
+            <section id="other-publications" class="home-section wg-v1/about" style="padding: 0;">
+                <div class="content-centered">
+                    <h2>Other Publications</h2>
+                    <div class="paper-entry">
+                        <span class="paper-title">
+                            <a href="https://www.mdpi.com/2072-4292/17/10/1717" target="_blank" rel="noopener">
+                                Advancing Corn Yield Mapping in Kenya Through Transfer Learning
+                            </a>
+                        </span>
+                        <br>
+                        <span class="paper-info">with Ahaan Bohra, Chenchen Ren, Shuo Chen and Yuchi Ma</span>
+                        <br>
+                        <span class="paper-info"><em>Remote Sensing</em> (2025)</span>
+                        <br>
+                        <button type="button" class="toggle-abstract-btn">Abstract</button>
+                        <div class="abstract-text" style="display:none; margin-top: 0.5em;">
+                            Crop yield mapping is essential for food security and policy making. Recent machine learning (ML) and deep learning (DL) methods have achieved impressive accuracy in crop yield estimation. However, these models require numerous training samples that are scarce in regions with underdeveloped infrastructure. Furthermore, domain shifts between different spatial regions prevent DL models trained in one region from being directly applied to another without domain adaptation. This effect is particularly pronounced between regions with significant climate and environmental variations such as the U.S. and Kenya. To address this issue, we propose using fine-tuning-based transfer learning, which learns general associations between predictors and response variables from the data-abundant source domain and then fine-tunes the model on the data-scarce target domain. We assess the model's performance on estimating corn yields using Kenya (target domain) and the U.S. (source domain). Feature variables, including time-series vegetation indices (VIs) and sequential meteorological variables from both domains, are used to pre-train and fine-tune the deep neural network model. The model is fine-tuned using data from 5 years (2019-2023) and tested using leave-one-year-out cross validation. The fine-tuned DNN achieves an overall R2 of 0.632—higher than both the U.S.-only and Kenya-only baselines—but paired significance tests show no aggregate difference, though a statistically significant gain does occur in 2023 under anomalous heat conditions. These results demonstrate that fine-tuning can reliably transfer learned representations across continents and, under certain climatic scenarios, yield meaningful improvements.
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
-    <div id="research">
-        <section id="working-papers" class="home-section wg-v1/about" style="padding: 0;">
-            <div class="content-centered">
-                <h2>Working Paper</h2>
-
-                <div class="paper-entry"><span class="paper-title">Informality and the City Size Wage Premium: Evidence from Brazil</span>
-                    <br>
-                    <span class="paper-info"> [Draft available upon request] </span> <br>
-                    <button type="button" class="toggle-abstract-btn">Abstract</button>
-                    <div class="abstract-text" style="display:none; margin-top: 1.5em;">
-                        This paper analyzes how pervasive informality shapes the distribution of productivity gains
-                        typically associated with larger cities in Brazil. Using Census data, it shows that informality
-                        attenuates the urban wage premium by generating differential returns to density across worker
-                        types.
-                        Decomposing employment density into formal and informal components, the analysis reveals that
-                        formal
-                        workers experience strong wage gains from formal density, which are partially offset by a
-                        negative
-                        effect from informal density, while informal workers only benefit from formal density. These
-                        findings suggest that productive advantages of cities are primarily driven by the presence of
-                        formal
-                        workers, and that informality alters the composition of productivity spillovers in urban labor
-                        markets of emerging economies.
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="work-in-progress" class="home-section wg-v1/about" style="padding: 0;">
-            <div class="content-centered">
-                <h2>Work in Progress</h2>
-
-                <div class="paper-entry">
-                    <span class="paper-title">Trac(k)tors of Change: Monitoring, Tractor Mobility and Agricultural Mechanization in Kenya</span>
-                </div>
-
-                <div class="paper-entry"><span class="paper-title">Milky Way: Market Structure and Behavior of Informal Traders in the Kenyan Dairy Sector</span>
-                    <br>
-                    <span class="paper-info"> with Guanghong Xu and Martin Nandelenga </span>
-                </div>
-
-                <div class="paper-entry">
-                    <span class="paper-title">
-                        Ethnic Diversity and Technology Choice in Manufacturing
-                    </span>
-                </div>
-            </div>
-        </section>
-        <section id="other-publications" class="home-section wg-v1/about" style="padding: 0;">
-            <div class="content-centered">
-                <h2>Other Publications</h2>
-
-                <div class="paper-entry">
-                <span class="paper-title">
-                <a href="https://www.mdpi.com/2072-4292/17/10/1717" target="_blank" rel="noopener">
-                    Advancing Corn Yield Mapping in Kenya Through Transfer Learning</a> </span> <br>
-                    <span class="paper-info"> with Ahaan Bohra, Chenchen Ren, Shuo Chen and Yuchi Ma <br> <em>Remote Sensing</em> (2025)</span>
-                    <br>
-                    <button type="button" class="toggle-abstract-btn">Abstract</button>
-                    <div class="abstract-text" style="display:none; margin-top: 1.5em;">
-                        Crop yield mapping is essential for food security and policy making. Recent machine learning
-                        (ML)
-                        and deep learning (DL) methods have achieved impressive accuracy in crop yield estimation.
-                        However,
-                        these models require numerous training samples that are scarce in regions with underdeveloped
-                        infrastructure. Furthermore, domain shifts between different spatial regions prevent DL models
-                        trained in one region from being directly applied to another without domain adaptation. This
-                        effect
-                        is particularly pronounced between regions with significant climate and environmental variations
-                        such as the U.S. and Kenya. To address this issue, we propose using fine-tuning-based transfer
-                        learning, which learns general associations between predictors and response variables from the
-                        data-abundant source domain and then fine-tunes the model on the data-scarce target domain. We
-                        assess the model's performance on estimating corn yields using Kenya (target domain) and the
-                        U.S.
-                        (source domain). Feature variables, including time-series vegetation indices (VIs) and
-                        sequential
-                        meteorological variables from both domains, are used to pre-train and fine-tune the deep neural
-                        network model. The model is fine-tuned using data from 5 years (2019-2023) and tested using
-                        leave-one-year-out cross validation. The fine-tuned DNN achieves an overall R2 of 0.632—higher
-                        than
-                        both the U.S.-only and Kenya-only baselines—but paired significance tests show no aggregate
-                        difference, though a statistically significant gain does occur in 2023 under anomalous heat
-                        conditions. These results demonstrate that fine-tuning can reliably transfer learned
-                        representations
-                        across continents and, under certain climatic scenarios, yield meaningful improvements.
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
-</div>
-<div class="page-footer">
-    <div class="container">
-        <footer class="site-footer">
-            <p class="powered-by copyright-license-text">
-                © 2025 Sophie Nottmeyer. This work is licensed under
-                <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">
-                    CC BY NC ND 4.0
-                </a>
-            </p>
+
+    <!-- ===== Footer ===== -->
+    <div class="page-footer">
+        <div class="container">
+            <footer class="site-footer">
+                <p class="powered-by copyright-license-text">
+                    © 2025 Sophie Nottmeyer. This work is licensed under
+                    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">
+                        CC BY NC ND 4.0
+                    </a>
+                </p>
+            </footer>
+        </div>
     </div>
-</div>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const homeLink = document.querySelector('a.nav-link[href="/#about"]');
-        const researchLink = document.querySelector('a.nav-link[href="/#research"]');
-        const aboutSection = document.getElementById('about');
-        const researchSection = document.getElementById('research');
 
-        function onScroll() {
-            const scrollPos = window.scrollY || window.pageYOffset;
-            const pubTop = researchSection.offsetTop - 80; // adjust offset for navbar height
-            const pubBottom = pubTop + researchSection.offsetHeight;
-            const aboutTop = aboutSection.offsetTop - 80;
-            const aboutBottom = aboutTop + aboutSection.offsetHeight;
+    <!-- ===== Scripts ===== -->
+    <script>
+        // Navbar active section highlight
+        document.addEventListener("DOMContentLoaded", function () {
+            const homeLink = document.querySelector('a.nav-link[href="/#about"]');
+            const researchLink = document.querySelector('a.nav-link[href="/#research"]');
+            const aboutSection = document.getElementById('about');
+            const researchSection = document.getElementById('research');
 
-            if (scrollPos >= pubTop && scrollPos < pubBottom) {
-                researchLink.classList.add('active');
-                homeLink.classList.remove('active');
-            } else if (scrollPos >= aboutTop && scrollPos < aboutBottom) {
-                homeLink.classList.add('active');
-                researchLink.classList.remove('active');
-            } else {
-                homeLink.classList.remove('active');
-                researchLink.classList.remove('active');
-            }
-        }
+            function onScroll() {
+                const scrollPos = window.scrollY || window.pageYOffset;
+                const pubTop = researchSection.offsetTop - 80;
+                const pubBottom = pubTop + researchSection.offsetHeight;
+                const aboutTop = aboutSection.offsetTop - 80;
+                const aboutBottom = aboutTop + aboutSection.offsetHeight;
 
-        window.addEventListener('scroll', onScroll);
-        onScroll(); // run on load
-    });
-</script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll('.toggle-abstract-btn').forEach(function (btn) {
-            btn.addEventListener('click', function () {
-                var abstract = this.nextElementSibling;
-                if (abstract.style.display === "none" || abstract.style.display === "") {
-                    abstract.style.display = "block";
+                if (scrollPos >= pubTop && scrollPos < pubBottom) {
+                    researchLink.classList.add('active');
+                    homeLink.classList.remove('active');
+                } else if (scrollPos >= aboutTop && scrollPos < aboutBottom) {
+                    homeLink.classList.add('active');
+                    researchLink.classList.remove('active');
                 } else {
-                    abstract.style.display = "none";
+                    homeLink.classList.remove('active');
+                    researchLink.classList.remove('active');
                 }
+            }
+
+            window.addEventListener('scroll', onScroll);
+            onScroll();
+        });
+    </script>
+    <script>
+        // Abstract toggle buttons
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('.toggle-abstract-btn').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var abstract = this.nextElementSibling;
+                    if (abstract.style.display === "none" || abstract.style.display === "") {
+                        abstract.style.display = "block";
+                    } else {
+                        abstract.style.display = "none";
+                    }
+                });
             });
         });
-    });
-</script>
+    </script>
 </body>
 </html>
