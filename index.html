@@ -14,17 +14,19 @@
     <meta name="google-site-verification" content="1TQY8M2Sq4bWyf-XpFnehN7zBzhi5V_ONxxw6cwglcA" />
     <link rel="alternate" hreflang="en-us" href="https://sophienottmeyer.github.io/">
     <link rel="canonical" href="https://sophienottmeyer.github.io/">
-    <link rel="icon" type="image/png" href="/assets/favicon.png">
-    <link rel="apple-touch-icon" type="image/png" href="/assets/favicon.png">
+    <link rel="icon" type="image/png" href="/assets/favicon_circle.png">
+    <link rel="shortcut icon" href="/assets/favicon_circle.png">
+    <link rel="apple-touch-icon" type="image/png" href="/assets/favicon_circle.png">
+    <link rel="mask-icon" href="/assets/favicon_circle.svg" color="#1ABC9C">
     <meta property="twitter:card" content="summary">
     <meta property="twitter:site" content="@snottmeyer">
     <meta property="twitter:creator" content="@snottmeyer">
-    <meta property="twitter:image" content="https://sophienottmeyer.github.io/assets/avatar.jpg">
+    <meta property="twitter:image" content="/assets/nottmeyer_portrait_2.jpg">
     <meta property="og:site_name" content="Sophie Nottmeyer">
     <meta property="og:url" content="https://sophienottmeyer.github.io/">
     <meta property="og:title" content="Sophie Nottmeyer">
     <meta property="og:description" content="PhD Candidate in Economics at CEMFI">
-    <meta property="og:image" content="https://sophienottmeyer.github.io/assets/avatar.jpg">
+    <meta property="og:image" content="/assets/nottmeyer_portrait_2.jpg">
     <meta property="og:locale" content="en-us">
     <meta property="og:updated_time" content="2022-10-24T00:00:00+00:00">
     <script type="application/ld+json">
@@ -73,7 +75,9 @@
         .paper-entry { margin-top: 2em; margin-bottom: 2em; line-height: 1.3; }
         .paper-info { font-size: 0.9em; }
         .abstract-text { font-size: 0.8em; text-align: justify; }
-        .article-style { font-size: 0.95em; }
+    .article-style { font-size: 0.95em; }
+    /* Make Teaching section text slightly smaller to distinguish it and save vertical space */
+    #teaching .article-style { font-size: 0.9em; }
     </style>
 </head>
 <body id="top" class="page-wrapper" data-spy="scroll" data-offset="70" data-target="#navbar-main" data-wc-page-id="3976528693a0108357f4928017600865">
@@ -119,11 +123,14 @@
                     </div>
                     <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
                         <ul class="navbar-nav d-md-inline-flex">
-                            <li class="nav-item"></li>
+                            <li class="nav-item">
                                 <a class="nav-link active" href="/#about" data-target="#about"><span>Home</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/#research" data-target="#research"><span>Research</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/#teaching" data-target="#teaching"><span>Teaching</span></a>
                             </li>
                         </ul>
                     </div>
@@ -190,7 +197,7 @@
                                 My CV is available <a href="/files/nottmeyer_CV.pdf" target="_blank">here</a>.
                             </p>
                             <p style="font-size: 0.95em; margin-top: 1.5em; margin-bottom: 1.5em;">
-                                <i><b> Upcoming: </b> I will present at NEUDC 2025 (Tufts University, Nov 8-9) and in the Poster Sessions at the CEPR Paris Symposium (Dec 8). Happy to connect!</i>
+                                <i><b> Upcoming: </b> I will present at NEUDC 2025 (Tufts University, Nov 8-9) and in the Poster Sessions at the CEPR Paris Symposium (Dec 8). Feel free to reach out!</i>
                             </p>
                         </div>
                         <div class="row"></div>
@@ -212,7 +219,7 @@
                             </a>
                         </span> <br>
                         <button type="button" class="toggle-abstract-btn">Abstract</button>
-                        <div class="abstract-text" style="display:none; margin-top: 0.5em;">
+                        <div class="abstract-text" style="display:block; margin-top: 0.5em;">
                             Private rental markets can help small-scale producers in developing countries overcome capital indivisibilities and adopt productive technologies, yet they remain limited in scope. This paper studies the role of monitoring problems on the supply side of tractor rental markets in Kenya, where moral hazard between tractor owners and operators discourages owners from sending tractors to remote areas, limiting the efficient spatial allocation of scarce capital and, thus, access to mechanization. To study this mechanism, I evaluate the impact of a new GPS tracking app that allows owners to monitor their operators remotely, combining unique tractor GPS data from around 1,200 tractors and 900,000 georeferenced fields, satellite data and an original farmer survey with a quantitative spatial model. After adoption, monitored tractors gradually expand their range of operations and reallocate toward areas where potential returns to mechanization are higher, consistent with a reduction in the monitoring cost and a more efficient spatial allocation. Further, fields visited by monitored tractors experience larger increases in remotely-sensed vegetation growth than similar nearby fields, suggesting productivity gains at destination. Finally, I develop and estimate a quantitative spatial model of tractor location choice that incorporates monitoring cost to quantify the aggregate gains from the technology. The results indicate that digital monitoring raises output by 2%, reducing spatial misallocation by 15%, and is more cost-effective than an equivalent subsidy.
                         </div>
                     </div>
@@ -226,7 +233,7 @@
                     <div class="paper-entry">
                         <span class="paper-title">Informality and the City Size Wage Premium: Evidence from Brazil</span> <br>
                         <button type="button" class="toggle-abstract-btn">Abstract</button>
-                        <div class="abstract-text" style="display:none; margin-top: 0.5em;">
+                        <div class="abstract-text" style="display:block; margin-top: 0.5em;">
                             This paper analyzes how pervasive informality shapes the distribution of productivity gains typically associated with larger cities in Brazil. Using Census data, it shows that informality attenuates the urban wage premium by generating differential returns to density across worker types. Decomposing employment density into formal and informal components, the analysis reveals that formal workers experience strong wage gains from formal density, which are partially offset by a negative effect from informal density, while informal workers only benefit from formal density. These findings suggest that productive advantages of cities are primarily driven by the presence of formal workers, and that informality alters the composition of productivity spillovers in urban labor markets of emerging economies.
                         </div>
                     </div>
@@ -264,6 +271,26 @@
                 </div>
             </section>
         </div>
+
+        <!-- --- Teaching Section (inserted after Research) --- -->
+        <section id="teaching" class="home-section wg-v1/about" style="padding: 0;">
+            <div class="content-centered">
+                <h2>Teaching</h2>
+                <div class="article-style">
+                        <p><strong>Graduate:</strong></p>
+                        <ul>
+                            <li>Quantitative Spatial Models (TA), CEMFI Summer School (2024)</li>
+                            <li>Development Economics (TA), CEMFI (2023, 2024), 4.6/5</li>
+                            <li>Urban Economics (TA), CEMFI (2022), 4.6/5</li>
+                        </ul>
+                        <p><strong>Undergraduate:</strong></p>
+                        <ul>
+                            <li>Big Data: Applications to Spatial Data (Instructor), CEMFI Undergraduate Summer Internship Program (2022)</li>
+                            <li>Mathematics for Economists (TA), University of Tübingen (2012)</li>
+                        </ul>
+                </div>
+            </div>    
+        </section>
     </div>
 
     <!-- ===== Footer ===== -->
@@ -282,34 +309,59 @@
 
     <!-- ===== Scripts ===== -->
     <script>
-        // Navbar active section highlight
+        // Navbar active section highlight using IntersectionObserver
         document.addEventListener("DOMContentLoaded", function () {
-            const homeLink = document.querySelector('a.nav-link[href="/#about"]');
-            const researchLink = document.querySelector('a.nav-link[href="/#research"]');
-            const aboutSection = document.getElementById('about');
-            const researchSection = document.getElementById('research');
+            const sections = [
+                { id: 'about', link: document.querySelector('a.nav-link[href="/#about"]') },
+                { id: 'research', link: document.querySelector('a.nav-link[href="/#research"]') },
+                { id: 'teaching', link: document.querySelector('a.nav-link[href="/#teaching"]') }
+            ];
 
-            function onScroll() {
-                const scrollPos = window.scrollY || window.pageYOffset;
-                const pubTop = researchSection.offsetTop - 80;
-                const pubBottom = pubTop + researchSection.offsetHeight;
-                const aboutTop = aboutSection.offsetTop - 80;
-                const aboutBottom = aboutTop + aboutSection.offsetHeight;
-
-                if (scrollPos >= pubTop && scrollPos < pubBottom) {
-                    researchLink.classList.add('active');
-                    homeLink.classList.remove('active');
-                } else if (scrollPos >= aboutTop && scrollPos < aboutBottom) {
-                    homeLink.classList.add('active');
-                    researchLink.classList.remove('active');
-                } else {
-                    homeLink.classList.remove('active');
-                    researchLink.classList.remove('active');
-                }
+            // helper to clear active
+            function clearActive() {
+                sections.forEach(s => s.link && s.link.classList.remove('active'));
             }
 
-            window.addEventListener('scroll', onScroll);
-            onScroll();
+            // IntersectionObserver callback: choose the section with largest intersection ratio
+            const observer = new IntersectionObserver((entries) => {
+                // find the visible entry with the largest intersectionRatio
+                let visible = entries.filter(e => e.isIntersecting);
+                if (visible.length === 0) return;
+                visible.sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+                const topSectionId = visible[0].target.id;
+
+                clearActive();
+                const match = sections.find(s => s.id === topSectionId);
+                if (match && match.link) match.link.classList.add('active');
+            }, {
+                root: null,
+                rootMargin: '-20% 0px -40% 0px', // trigger when section is roughly in the central viewport
+                threshold: [0, 0.1, 0.25, 0.5, 0.75, 1]
+            });
+
+            sections.forEach(s => {
+                const el = document.getElementById(s.id);
+                if (el) observer.observe(el);
+            });
+
+            // Fallback: if IntersectionObserver not supported, use scroll handler
+            if (!('IntersectionObserver' in window)) {
+                function onScroll() {
+                    const scrollPos = window.scrollY || window.pageYOffset;
+                    sections.forEach(s => {
+                        const el = document.getElementById(s.id);
+                        if (!el || !s.link) return;
+                        const top = el.offsetTop - 80;
+                        const bottom = top + el.offsetHeight;
+                        if (scrollPos >= top && scrollPos < bottom) {
+                            clearActive();
+                            s.link.classList.add('active');
+                        }
+                    });
+                }
+                window.addEventListener('scroll', onScroll);
+                onScroll();
+            }
         });
     </script>
     <script>
