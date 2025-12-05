@@ -68,6 +68,16 @@
         }
         .toggle-abstract-btn:hover, .toggle-abstract-btn:focus { border-color: #1ABC9C; color: #1ABC9C; }
 
+        /* --- External link styled like the abstract button (does NOT toggle abstracts) --- */
+        .external-link-btn {
+            background: #fff; color: #000; border: 1px solid #000;
+            border-radius: 0.5em; padding: 0.3em 0.6em; font-size: 0.8em; font-weight: 500;
+            cursor: pointer; box-shadow: 0 1px 4px rgba(22,152,157,0.07);
+            transition: background 0.2s, border 0.2s, color 0.2s; outline: none; margin-top: 0.4em;
+            display: inline-block; text-decoration: none; margin-left: 0.45em;
+        }
+        .external-link-btn:hover, .external-link-btn:focus { border-color: #1ABC9C; color: #1ABC9C; }
+
         /* --- Layout --- */
         .content-centered { max-width: 1100px; margin: 0 auto; padding: 30px 0.25rem; }
         #research h2 { margin-top: 2em; margin-bottom: 1em; }
@@ -220,6 +230,7 @@
                             <span class="paper-info"><em> (Job Market Paper)</em></span>
                         </span> <br>
                         <button type="button" class="toggle-abstract-btn">Abstract</button>
+                        <a class="external-link-btn" href="https://blogs.worldbank.org/en/impactevaluations/following-the-tracks--how-digital-monitoring-expands-access-to-m?CID=WBW_AL_BlogNotification_EN_EXT" target="_blank" rel="noopener">WB Development Impact Blog</a>
                         <div class="abstract-text" style="display:block; margin-top: 0.5em;">
                             Limited access to mechanization constrains agricultural productivity in developing economies, where rental markets for capital goods remain thin. This paper studies how supply-side monitoring frictions shape the spatial allocation of capital in tractor rental markets in Kenya. I evaluate the introduction of a GPS tracking application that enables tractor owners to monitor operators remotely, combining high-frequency GPS data from around 1,200 tractors and nearly one million georeferenced fields with satellite imagery, an original farmer survey, and a quantitative spatial model. Following adoption, monitored tractors gradually expand their range of operations and reallocate toward areas with higher returns to mechanization, consistent with reduced monitoring costs and improved capital allocation. Remote sensing evidence shows that fields visited by monitored tractors exhibit more effective immediate land preparation and greater sustained vegetation growth than comparable nearby fields, suggesting productivity gains at destination. Model estimates indicate that digital monitoring reduces spatial misallocation by 15% and raises aggregate output by 2%, demonstrating the potential of digital technologies to enhance market efficiency in settings involving the delegated operation of mobile capital.
                         </div>
